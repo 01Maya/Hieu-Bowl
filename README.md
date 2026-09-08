@@ -9,3 +9,4 @@ The design combines expressive typography, vibrant food imagery, smooth animatio
 ## 🥢  Description
 
 Hieu Bowl showcases Vietnamese rice bowls through a colorful and engaging restaurant website.
+It maintains a consistent purple, light-blue, yellow, red, green, and white visual system. 🎨
