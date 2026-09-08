@@ -1,0 +1,127 @@
+.page-section {
+  padding: clamp(5rem, 11vw, 10rem) clamp(1.25rem, 8vw, 9rem);
+}
+.about-section {
+  min-height: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: clamp(3rem, 10vw, 10rem);
+  position: relative;
+  overflow: hidden;
+}
+.about-image-wrap {
+  position: relative;
+  justify-self: center;
+  width: min(500px, 90%);
+}
+.about-image {
+  position: relative;
+  z-index: 2;
+  border-radius: 50%;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.about-image-wrap:hover .about-image {
+  filter: drop-shadow(0 18px 12px var(--dark));
+}
+.yellow-arc {
+  position: absolute;
+  z-index: 1;
+  inset: -10%;
+  border: 30px solid var(--yellow);
+  border-radius: 50%;
+  transform: rotate(38deg);
+  animation: arc-turn 12s ease-in-out infinite;
+}
+.about-copy {
+  max-width: 450px;
+}
+.about-copy h2 {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  margin: 0 0 1.5rem;
+  color: var(--purple);
+}
+.about-copy h2 .script {
+  font-size: clamp(4.5rem, 8vw, 7rem);
+  line-height: 0.8;
+}
+.about-copy h2 .display {
+  font-size: clamp(3rem, 5vw, 5rem);
+}
+.about-copy p,
+.testimonial-copy p,
+.cta-copy p {
+  line-height: 1.7;
+  font-size: 0.93rem;
+  max-width: 390px;
+  margin: 0 0 2rem;
+}
+@media (max-width: 900px) {
+  .about-section {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    min-height: auto;
+  }
+
+  .about-image-wrap {
+    width: min(100%, 24rem);
+  }
+
+  .about-copy {
+    max-width: 34rem;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-section {
+    padding: 4rem 1.25rem 5rem;
+    gap: 2.5rem;
+  }
+
+  .about-image-wrap {
+    width: min(100%, 18rem);
+  }
+
+  .yellow-arc {
+    border-width: 18px;
+  }
+
+  .about-copy h2 {
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .about-copy h2 .script {
+    font-size: clamp(4rem, 20vw, 5.5rem);
+  }
+
+  .about-copy h2 .display {
+    font-size: clamp(2.7rem, 14vw, 4rem);
+  }
+
+  .about-doodle {
+    right: 8%;
+    bottom: 3%;
+    font-size: 1.7rem;
+  }
+}
+
+.about-doodle {
+  position: absolute;
+  right: 5%;
+  bottom: 12%;
+  color: var(--red);
+  font-family: "Brush Script MT", cursive;
+  font-size: 2.2rem;
+  line-height: 0.8;
+  transform: rotate(-12deg);
+}

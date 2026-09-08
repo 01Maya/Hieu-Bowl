@@ -1,0 +1,419 @@
+.testimonial-section {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr 1fr;
+  gap: clamp(2rem, 7vw, 7rem);
+  align-items: center;
+  min-height: 650px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    110deg,
+    var(--white) 0%,
+    var(--white) 68%,
+    var(--hero) 68%,
+    var(--hero) 100%
+  );
+}
+.testimonial-section:before {
+  content: "GOOD WORDS";
+  position: absolute;
+  right: -2rem;
+  top: 8%;
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 10vw, 9rem);
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  color: color-mix(in srgb, var(--purple) 7%, transparent);
+  transform: rotate(-8deg);
+  pointer-events: none;
+}
+.testimonial-food {
+  align-self: end;
+  transform: translateX(-15%) rotate(-12deg);
+  transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.testimonial-food img {
+  width: 125%;
+  mix-blend-mode: multiply;
+  filter: drop-shadow(0 20px 16px var(--dark));
+  animation: float 7s ease-in-out infinite;
+}
+.testimonial-card {
+  background: var(--hero);
+  border-radius: 48% 52% 44% 56% / 45% 39% 61% 55%;
+  padding: clamp(3rem, 6vw, 6rem) clamp(2rem, 5vw, 5rem);
+  position: relative;
+  transform: rotate(-4deg);
+  transition:
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.6s ease;
+}
+.testimonial-card.next {
+  animation: testimonial-next 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.testimonial-card.previous {
+  animation: testimonial-previous 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.testimonial-card:hover {
+  transform: rotate(-2deg) scale(1.02);
+}
+.testimonial-card blockquote {
+  animation: quote-in 0.7s 0.14s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.testimonial-card .reviewer {
+  animation: reviewer-in 0.65s 0.28s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.carousel-controls {
+  gap: 1.1rem;
+}
+.carousel-arrow {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid color-mix(in srgb, var(--purple) 24%, transparent);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--purple);
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    background 0.35s ease,
+    color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+.carousel-arrow:hover {
+  transform: translateY(-4px) scale(1.06);
+  background: var(--purple);
+  color: var(--white);
+  box-shadow: 0 8px 0 var(--yellow);
+}
+.carousel-arrow svg {
+  width: 17px;
+}
+.carousel-count {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--purple);
+}
+.carousel-progress {
+  width: min(220px, 100%);
+  height: 3px;
+  margin-top: 1.25rem;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--purple) 16%, transparent);
+}
+.carousel-progress span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--red);
+  transform-origin: left;
+  animation: progress-line 6.5s linear both;
+}
+.carousel-dots {
+  display: flex;
+  gap: 0.55rem;
+  margin-top: 1.4rem;
+}
+.carousel-dots button {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--yellow);
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+.carousel-dots button.active {
+  background: var(--red);
+  transform: scale(1.5);
+}
+.quote-icon {
+  color: var(--red);
+}
+.quote-icon svg {
+  fill: var(--red);
+  width: 25px;
+}
+.testimonial-card blockquote {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: clamp(1.5rem, 2.5vw, 2.6rem);
+  line-height: 0.98;
+  margin: 1rem 0 2rem;
+  transform: rotate(4deg);
+}
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  transform: rotate(4deg);
+}
+.avatar {
+  display: grid;
+  place-items: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: var(--yellow);
+  border-radius: 50%;
+  font-family: var(--font-display);
+  font-weight: 800;
+}
+.reviewer strong,
+.reviewer span {
+  display: block;
+  font-size: 0.68rem;
+}
+.reviewer span {
+  color: var(--dark);
+  margin-top: 0.2rem;
+}
+.testimonial-copy h2 {
+  color: var(--purple);
+  font-size: clamp(3.2rem, 5vw, 5.5rem);
+  line-height: 0.83;
+  margin: 0 0 1.5rem;
+}
+.testimonial-copy .carousel-controls {
+  justify-content: flex-start;
+  margin-top: 2rem;
+}
+@media (max-width: 900px) {
+  .testimonial-section {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 1.5rem;
+    min-height: 560px;
+    padding-inline: 6vw;
+  }
+
+  .testimonial-food {
+    align-self: center;
+    width: min(100%, 18rem);
+    transform: translateX(-8%) rotate(-8deg);
+  }
+
+  .testimonial-food img {
+    width: 100%;
+  }
+
+  .testimonial-card {
+    padding: clamp(2.5rem, 6vw, 4rem) clamp(1.5rem, 4vw, 3rem);
+  }
+}
+
+@media (max-width: 640px) {
+  .testimonial-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-height: auto;
+    padding: 4rem 1.25rem 5rem;
+    background: var(--white);
+  }
+
+  .testimonial-food {
+    align-self: center;
+    width: min(100%, 16rem);
+    margin-inline: auto;
+    transform: rotate(-6deg);
+  }
+
+  .testimonial-food img {
+    display: block;
+    width: 100%;
+    max-width: 16rem;
+    margin-inline: auto;
+  }
+
+  .testimonial-card {
+    width: min(100%, 22rem);
+    margin-inline: auto;
+    padding: 3rem 2rem;
+  }
+
+  .testimonial-copy {
+    width: min(100%, 22rem);
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .testimonial-copy .carousel-controls,
+  .testimonial-copy .carousel-dots {
+    justify-content: center;
+  }
+
+  .carousel-progress {
+    margin-inline: auto;
+  }
+}
+
+.cta-section {
+  background: var(--cta);
+  color: var(--white);
+  display: grid;
+  grid-template-columns: minmax(250px, 0.8fr) minmax(360px, 1.25fr) minmax(
+      260px,
+      0.75fr
+    );
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+  position: relative;
+  min-height: 500px;
+  padding-top: clamp(4rem, 7vw, 6rem);
+  padding-bottom: clamp(4rem, 7vw, 6rem);
+  overflow: hidden;
+}
+.cta-section .eyebrow {
+  color: var(--yellow);
+}
+.cta-copy h2 {
+  font-size: clamp(3.2rem, 5vw, 5rem);
+  line-height: 0.86;
+  margin: 0 0 1.5rem;
+}
+.cta-copy p {
+  color: var(--white);
+}
+.signup-form {
+  position: relative;
+  z-index: 3;
+  align-self: center;
+  width: 100%;
+  max-width: 560px;
+}
+.signup-form label {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.7rem;
+  color: var(--white);
+}
+.signup-form div {
+  display: flex;
+  border-bottom: 1px solid var(--white);
+}
+.signup-form input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--white);
+  padding: 0.8rem 0;
+  font-size: 0.95rem;
+}
+.signup-form input::placeholder {
+  color: var(--white);
+}
+.signup-form button {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 0;
+  background: var(--red);
+  color: var(--white);
+  padding: 0 1rem;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+.signup-form button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 0 var(--orange);
+}
+.signup-form button svg {
+  width: 14px;
+}
+.cta-art {
+  position: relative;
+  right: auto;
+  bottom: auto;
+  justify-self: end;
+  width: min(390px, 100%);
+  aspect-ratio: 1;
+  transform: translateX(1rem);
+  z-index: 2;
+}
+.cta-art img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  mix-blend-mode: multiply;
+  transform: rotate(-12deg);
+  filter: drop-shadow(
+    0 20px 14px color-mix(in srgb, var(--dark) 38%, transparent)
+  );
+}
+.cta-circle {
+  position: absolute;
+  inset: 12%;
+  background: var(--yellow);
+  border-radius: 50%;
+  animation: slow-drift 9s ease-in-out infinite;
+}
+.cta-leaf {
+  position: absolute;
+  z-index: 3;
+  top: 5%;
+  left: 4%;
+  color: var(--fresh);
+  transform: rotate(-25deg);
+  width: 60px;
+  height: 60px;
+}
+.footer {
+  padding: 4rem clamp(1.25rem, 8vw, 9rem) 1.5rem;
+  background: var(--white);
+}
+.footer-brand p {
+  color: var(--dark);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-top: 1.2rem;
+}
+.footer-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: clamp(3rem, 10vw, 10rem);
+  margin-top: -4.5rem;
+}
+.footer-links div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  min-width: 120px;
+}
+.footer-links strong {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+.footer-links a {
+  font-size: 0.75rem;
+  color: var(--dark);
+}
+.footer-links a:hover {
+  color: var(--red);
+}
+.footer-bottom {
+  border-top: 1px solid var(--yellow);
+  margin-top: 4rem;
+  padding-top: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  color: var(--dark);
+  font-size: 0.62rem;
+  letter-spacing: 0.04em;
+}
+.footer-bottom div {
+  display: flex;
+  gap: 1.5rem;
+}
