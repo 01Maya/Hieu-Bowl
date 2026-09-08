@@ -6,4 +6,4 @@ A modern Vietnamese kitchen landing page focused on fresh bowls, bold flavors, a
 
 The design combines expressive typography, vibrant food imagery, smooth animations, and a responsive editorial layout. ✨
 
-## Description
+## 🥢  Description
