@@ -11,7 +11,7 @@ const displayFont = Barlow_Condensed({
 });
 
 export const metadata: Metadata = {
-  title: "HIEU BOWL — Vietnamese Kitchen",
+  title: "HIEU BOWL🍜 — Vietnamese Kitchen ",
   description:
     "Fresh Vietnamese bowls made with feeling. HIEU BOWL brings color, comfort, and generous flavor to your everyday table.",
   icons: {
