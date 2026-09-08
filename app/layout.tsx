@@ -14,7 +14,6 @@ export const metadata: Metadata = {
   title: "HIEU BOWL — Vietnamese Kitchen",
   description:
     "Fresh Vietnamese bowls made with feeling. HIEU BOWL brings color, comfort, and generous flavor to your everyday table.",
-  generator: "v0.app",
   icons: {
     icon: [
       {
