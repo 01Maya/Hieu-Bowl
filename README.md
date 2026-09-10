@@ -17,3 +17,5 @@ It maintains a consistent purple, light-blue, yellow, red, green, and white visu
 Interactive motion, section navigation, hover states, carousels, and scrolling effects create a polished user experience. 💫
 
 ---
+
+## ✨ Features
