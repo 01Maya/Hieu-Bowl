@@ -22,3 +22,4 @@ Interactive motion, section navigation, hover states, carousels, and scrolling e
 
 * 📱 Fully responsive desktop, tablet, and mobile layout.
 * 🧭 Smooth navigation to each page section.
+* 🍽️ Responsive navbar with section links and order CTA.
