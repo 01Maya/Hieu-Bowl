@@ -19,3 +19,5 @@ Interactive motion, section navigation, hover states, carousels, and scrolling e
 ---
 
 ## ✨ Features
+
+* 📱 Fully responsive desktop, tablet, and mobile layout.
