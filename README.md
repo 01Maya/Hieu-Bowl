@@ -29,8 +29,6 @@ Interactive motion, section navigation, hover states, carousels, and scrolling e
 * 🌊 Parallax movement for decorative ingredients and artwork.
 * 🔄 Rotating, floating, and animated decorative elements.
 * 🍚 Menu carousel with previous and next controls.
-
-
-
+* 📝 Horizontal food-word marquee.
 
 ---
