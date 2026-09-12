@@ -26,8 +26,6 @@ Interactive motion, section navigation, hover states, carousels, and scrolling e
 * ⌨️ Hero typing, text reveal, and image reveal animations.
 * 👀 Scroll-triggered section reveal effects.
 * 🖱️ Hover effects for buttons, cards, images, and links.
-
-
-
-
+* 🌊 Parallax movement for decorative ingredients and artwork.
+*
 ---
