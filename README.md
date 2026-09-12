@@ -28,6 +28,9 @@ Interactive motion, section navigation, hover states, carousels, and scrolling e
 * 🖱️ Hover effects for buttons, cards, images, and links.
 * 🌊 Parallax movement for decorative ingredients and artwork.
 * 🔄 Rotating, floating, and animated decorative elements.
+* 🍚 Menu carousel with previous and next controls.
+
+
 
 
 ---
