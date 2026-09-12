@@ -25,3 +25,5 @@ Interactive motion, section navigation, hover states, carousels, and scrolling e
 * 🍽️ Responsive navbar with section links and order CTA.
 * ⌨️ Hero typing, text reveal, and image reveal animations.
 * 👀 Scroll-triggered section reveal effects.
+
+---
