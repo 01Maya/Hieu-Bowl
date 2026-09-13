@@ -37,4 +37,5 @@ Interactive motion, section navigation, hover states, carousels, and scrolling e
 
 
 * **🧭 Navbar:** Responsive navigation with links to major sections and an order action.
-*
+* **🌟 Hero:** Main brand introduction with animated typography, featured bowl artwork, decorative ingredients, and a menu CTA.
+
