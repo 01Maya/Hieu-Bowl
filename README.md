@@ -34,3 +34,7 @@ Interactive motion, section navigation, hover states, carousels, and scrolling e
 ---
 
 ## 🏗️ Sections
+
+
+* **🧭 Navbar:** Responsive navigation with links to major sections and an order action.
+*
