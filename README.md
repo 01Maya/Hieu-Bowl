@@ -32,3 +32,5 @@ Interactive motion, section navigation, hover states, carousels, and scrolling e
 * 📝 Horizontal food-word marquee.
 
 ---
+
+## 🏗️ Sections
