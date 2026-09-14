@@ -41,4 +41,5 @@ Interactive motion, section navigation, hover states, carousels, and scrolling e
 * **📖 About Us:** Brand story and concept introduction with a large featured bowl image.
 * **🍜 Menu:** Bowl showcase with product cards, prices, carousel controls, and hover effects.
 * **💬 Clients:** Customer testimonial section with animated quotes and decorative food artwork.
+* **📬 CTA:** Newsletter signup area inviting visitors to join the bowl club.
 
