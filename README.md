@@ -44,3 +44,4 @@ Interactive motion, section navigation, hover states, carousels, and scrolling e
 * **📬 CTA:** Newsletter signup area inviting visitors to join the bowl club.
 * **🔗 Footer:** Brand details, contact information, quick links, social links, policies, and copyright.
 
+---
