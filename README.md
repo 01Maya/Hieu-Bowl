@@ -51,3 +51,6 @@ Interactive motion, section navigation, hover states, carousels, and scrolling e
 
 * **▲ Next.js** — React framework for the application.
 * **🎨 Tailwind CSS** — Utility-first styling and responsive layouts.
+* **🎞️ Framer Motion** — Reveal, scroll, hover, parallax, and text animations.
+
+
