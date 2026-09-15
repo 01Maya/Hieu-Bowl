@@ -45,3 +45,5 @@ Interactive motion, section navigation, hover states, carousels, and scrolling e
 * **🔗 Footer:** Brand details, contact information, quick links, social links, policies, and copyright.
 
 ---
+
+## ⚙️ Tech Stack
