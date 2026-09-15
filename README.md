@@ -54,3 +54,4 @@ Interactive motion, section navigation, hover states, carousels, and scrolling e
 * **🎞️ Framer Motion** — Reveal, scroll, hover, parallax, and text animations.
 * **🧩 shadcn/ui** — Reusable and accessible UI components.
 
+---
