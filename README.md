@@ -47,3 +47,7 @@ Interactive motion, section navigation, hover states, carousels, and scrolling e
 ---
 
 ## ⚙️ Tech Stack
+
+
+* **▲ Next.js** — React framework for the application.
+
