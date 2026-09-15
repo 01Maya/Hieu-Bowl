@@ -55,3 +55,8 @@ Interactive motion, section navigation, hover states, carousels, and scrolling e
 * **🧩 shadcn/ui** — Reusable and accessible UI components.
 
 ---
+
+## 🖼️ Preview
+
+
+
