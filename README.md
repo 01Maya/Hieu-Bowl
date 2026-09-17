@@ -76,3 +76,9 @@ https://hieu-bowl.vercel.app/
 git clone <repository-url>
 ```
 
+### 2. 📂 Navigate to the project
+
+```bash
+cd hieu-bowl
+```
+
