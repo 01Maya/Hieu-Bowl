@@ -82,3 +82,8 @@ git clone <repository-url>
 cd hieu-bowl
 ```
 
+### 3. 📦 Install dependencies
+
+```bash
+npm install
+```
