@@ -68,7 +68,11 @@ https://hieu-bowl.vercel.app/
 
 ---
 
-
 ## 🚀 How to Install
 
+### 1. 📥 Clone the repository
+
+```bash
+git clone <repository-url>
+```
 
