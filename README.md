@@ -69,3 +69,6 @@ https://hieu-bowl.vercel.app/
 ---
 
 
+## 🚀 How to Install
+
+
