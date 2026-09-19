@@ -96,5 +96,8 @@ npm run dev
 
 ### 5. 🌐 Open the website
 
+```text
+http://localhost:3000
+``
 
 ---
