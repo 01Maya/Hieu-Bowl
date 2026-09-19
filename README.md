@@ -94,4 +94,7 @@ npm install
 npm run dev
 ```
 
+### 5. 🌐 Open the website
+
+
 ---
