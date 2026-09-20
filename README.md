@@ -103,3 +103,6 @@ http://localhost:3000
 ---
 
 ## 🛠️ Available Scripts
+
+```bash
+npm run dev       # 🚀 Start the development server
