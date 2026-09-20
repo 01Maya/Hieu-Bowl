@@ -107,3 +107,4 @@ http://localhost:3000
 ```bash
 npm run dev       # 🚀 Start the development server
 npm run build     # 📦 Create a production build
+npm run start     # ▶️ Run the production server
