@@ -117,4 +117,4 @@ npm run lint      # 🔍 Check the code for linting issues
 
 This project is for personal and educational use. Add your preferred license before publishing. ⚖️
 
-
+---
