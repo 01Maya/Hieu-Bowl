@@ -109,3 +109,5 @@ npm run dev       # 🚀 Start the development server
 npm run build     # 📦 Create a production build
 npm run start     # ▶️ Run the production server
 npm run lint      # 🔍 Check the code for linting issues
+
+---
