@@ -66,6 +66,8 @@ https://hieu-bowl.vercel.app/
 
 ## 📸 Screenshot
 
+<img width="2403" height="5887" alt="Image" src="https://github.com/user-attachments/assets/94b92ce0-a5d7-4d12-a41a-85f7552e99f8" />
+
 ---
 
 ## 🚀 How to Install
