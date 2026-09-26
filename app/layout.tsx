@@ -1,46 +1,42 @@
-import { Analytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from "next";
-import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 import { Barlow_Condensed, DM_Sans } from "next/font/google";
+
+import "./globals.css";
 
 const bodyFont = DM_Sans({
   subsets: ["latin"],
   variable: "--font-body",
+  display: "swap",
 });
 
 const displayFont = Barlow_Condensed({
   subsets: ["latin"],
   weight: ["600", "700", "800"],
   variable: "--font-display",
+  display: "swap",
 });
 
 const siteUrl = "https://hieu-bowl.vercel.app";
+
+const siteName = "HIEU BOWL";
+
+const siteTitle = "HIEU BOWL — Modern Vietnamese Food";
+
+const siteDescription =
+  "HIEU BOWL is a modern Vietnamese food website featuring fresh bowls, vibrant flavors, fresh ingredients, and a bold contemporary Vietnamese food experience.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   title: {
-    default: "HIEU BOWL — Vietnamese Food Website Concept",
+    default: siteTitle,
     template: "%s | HIEU BOWL",
   },
 
-  description:
-    "HIEU BOWL is a modern Vietnamese food website concept featuring fresh bowls, vibrant flavors, and a bold, playful visual experience.",
+  description: siteDescription,
 
-  keywords: [
-    "HIEU BOWL",
-    "Vietnamese food website",
-    "Vietnamese restaurant website design",
-    "Vietnamese food website design",
-    "food website design",
-    "restaurant website design",
-    "Vietnamese bowls",
-    "food landing page",
-    "restaurant landing page",
-    "food UI design",
-  ],
-
-  applicationName: "HIEU BOWL",
+  applicationName: siteName,
 
   authors: [
     {
@@ -49,7 +45,35 @@ export const metadata: Metadata = {
   ],
 
   creator: "Maya",
+
   publisher: "Maya",
+
+  generator: "Next.js",
+
+  referrer: "origin-when-cross-origin",
+
+  category: "food",
+
+  keywords: [
+    "HIEU BOWL",
+    "Vietnamese food",
+    "Vietnamese food website",
+    "Vietnamese cuisine",
+    "Vietnamese bowls",
+    "Vietnamese restaurant",
+    "fresh Vietnamese food",
+    "Vietnamese food website design",
+    "Vietnamese restaurant website design",
+    "food website design",
+    "restaurant website design",
+    "food website UI",
+    "restaurant UI design",
+    "food landing page",
+    "restaurant landing page",
+    "modern food website",
+    "modern restaurant website",
+    "Vietnamese food design",
+  ],
 
   alternates: {
     canonical: "/",
@@ -57,88 +81,173 @@ export const metadata: Metadata = {
 
   robots: {
     index: true,
+
     follow: true,
+
+    nocache: false,
+
     googleBot: {
       index: true,
+
       follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
+
+      noimageindex: false,
+
       "max-video-preview": -1,
+
+      "max-image-preview": "large",
+
+      "max-snippet": -1,
     },
   },
 
   openGraph: {
-    title: "HIEU BOWL — Vietnamese Food Website Concept",
-    description:
-      "A modern Vietnamese food website concept featuring fresh bowls, vibrant flavors, and a bold visual experience.",
-    url: siteUrl,
-    siteName: "HIEU BOWL",
     type: "website",
+
     locale: "en_US",
+
+    url: siteUrl,
+
+    siteName: siteName,
+
+    title: siteTitle,
+
+    description: siteDescription,
   },
 
   twitter: {
     card: "summary",
-    title: "HIEU BOWL — Vietnamese Food Website Concept",
-    description:
-      "A modern Vietnamese food website concept featuring fresh bowls, vibrant flavors, and a bold visual experience.",
+
+    title: siteTitle,
+
+    description: siteDescription,
   },
 
   icons: {
     icon: [
       {
         url: "/icon-light-32x32.png",
+
         media: "(prefers-color-scheme: light)",
       },
+
       {
         url: "/icon-dark-32x32.png",
+
         media: "(prefers-color-scheme: dark)",
       },
+
       {
         url: "/icon.svg",
+
         type: "image/svg+xml",
       },
     ],
+
     apple: "/apple-icon.png",
+  },
+
+  other: {
+    "theme-color": "#bfe7ed",
+
+    "format-detection": "telephone=no",
   },
 };
 
 export const viewport: Viewport = {
-  colorScheme: "light",
-  themeColor: "#bfe7ed",
   width: "device-width",
+
   initialScale: 1,
+
+  maximumScale: 5,
+
+  userScalable: true,
+
+  colorScheme: "light",
+
+  themeColor: "#bfe7ed",
 };
 
 const structuredData = {
   "@context": "https://schema.org",
+
   "@graph": [
     {
       "@type": "WebSite",
+
       "@id": `${siteUrl}/#website`,
+
       url: siteUrl,
-      name: "HIEU BOWL",
-      description:
-        "A modern Vietnamese food website concept featuring fresh bowls, vibrant flavors, and a bold visual experience.",
+
+      name: siteName,
+
+      description: siteDescription,
+
+      inLanguage: "en-US",
+
       creator: {
         "@type": "Person",
+
         name: "Maya",
       },
-      inLanguage: "en",
     },
+
+    {
+      "@type": "WebPage",
+
+      "@id": `${siteUrl}/#webpage`,
+
+      url: siteUrl,
+
+      name: siteTitle,
+
+      description: siteDescription,
+
+      isPartOf: {
+        "@id": `${siteUrl}/#website`,
+      },
+
+      about: {
+        "@type": "Thing",
+
+        name: "Vietnamese food",
+      },
+
+      inLanguage: "en-US",
+
+      creator: {
+        "@type": "Person",
+
+        name: "Maya",
+      },
+    },
+
     {
       "@type": "CreativeWork",
+
       "@id": `${siteUrl}/#project`,
-      name: "HIEU BOWL",
+
       url: siteUrl,
+
+      name: "HIEU BOWL",
+
+      headline: "Modern Vietnamese Food Website",
+
       description:
-        "A modern Vietnamese food website concept designed around fresh bowls, vibrant flavors, and a bold visual experience.",
+        "A modern Vietnamese food website featuring fresh bowls, vibrant flavors, fresh ingredients, and a bold contemporary Vietnamese food experience.",
+
+      genre: "Food Website Design",
+
+      keywords:
+        "Vietnamese food, Vietnamese food website, Vietnamese cuisine, Vietnamese bowls, food website design",
+
       creator: {
         "@type": "Person",
+
         name: "Maya",
       },
-      genre: "Web Design",
-      inLanguage: "en",
+
+      inLanguage: "en-US",
     },
   ],
 };
@@ -149,7 +258,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-background">
+    <html
+      lang="en"
+      className="bg-background"
+      suppressHydrationWarning
+    >
       <head>
         <script
           type="application/ld+json"
@@ -163,6 +276,7 @@ export default function RootLayout({
         className={`${bodyFont.variable} ${displayFont.variable} antialiased`}
       >
         {children}
+
         {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>
